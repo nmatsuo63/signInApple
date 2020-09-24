@@ -1,9 +1,10 @@
 <template>
   <div>
     <div>
+      <h2>サインインしていないと見えない情報です</h2>
       <img :src="$auth.user.picture" />
-      <h2>{{ $auth.user.name }}</h2>
-      <p>{{ $auth.user.email }}</p>
+      <h3>ユーザ名：{{ $auth.user.name }}</h3>
+      <p>メールアドレス：{{ $auth.user.email }}</p>
     </div>
 
     <!-- <div>
